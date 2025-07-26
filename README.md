@@ -44,3 +44,19 @@ docker compose up --build
 2. Access App
 Frontend: http://localhost:3000
 Backend: http://localhost:5000/chat
+
+Author
+Ajay Gowtham S – Full-Stack Developer | ML Enthusiast
+💼 Think41 Assessment Submission – July 2025
+---
+
+### ✅ How to Use It:
+1. Copy the entire content above
+2. Replace your current `README.md` in root of your repo (`Think41Assessment/`)
+3. Commit & push:
+
+```bash
+git add README.md
+git commit -m "docs: Final README for full project"
+git push origin main
+

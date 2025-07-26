@@ -1,11 +1,13 @@
-import React from 'react';
-import ChatBox from './ChatBox';
+import React from "react";
+import ChatWindow from "./components/ChatWindow";
+import { ChatProvider } from "./context/ChatContext";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <ChatBox />
-    </div>
+    <ChatProvider>
+      <ChatWindow />
+    </ChatProvider>
   );
 }
 

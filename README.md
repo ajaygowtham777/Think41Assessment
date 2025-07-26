@@ -1,44 +1,46 @@
-# 🛍️ E-commerce Customer Support Chatbot
+# 🛍️ Think41Assessment – AI Chatbot for E-commerce Clothing Site
 
-This is a full-stack AI-powered customer support chatbot built for an e-commerce clothing website. It answers user queries like:
+A full-stack AI-powered chatbot built using **React** and **Flask** to support customer queries for an e-commerce clothing platform. The bot can answer questions like:
 
-- 🏆 “What are the top 5 most sold products?”
-- 📦 “Show me the status of order ID 12345.”
-- 🧥 “How many Classic T-Shirts are left in stock?”
-
----
-
-## 🔧 Tech Stack
-
-- **Frontend**: React (with speech recognition, voice output, and chat UI)
-- **Backend**: Flask + Pandas (for data processing from CSV)
-- **Dataset**: [Recruit41 Ecommerce Dataset](https://github.com/recruit41/ecommerce-dataset)
-- **Voice Features**: Web Speech API
-- **Version Control**: Git & GitHub
+- “What are the top 5 most sold products?”
+- “Show me the status of order ID 12345.”
+- “How many Classic T-Shirts are left in stock?”
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- 🔍 Query understanding and data retrieval using NLP
-- 🗣️ Voice input and text-to-speech response
-- 📈 Realtime chat-like UI with typing animation and avatars
-- 🔁 Reset button to clear chat
-- 🎯 Answers stock, order, and product queries using CSV-based backend
+- 🔹 Ask order- and product-related queries via natural language
+- 🔹 View past conversation history
+- 🔹 Typing animation + speech recognition + voice response
+- 🔹 Responsive, styled chat UI with avatars & timestamps
+- 🔹 Dockerized for seamless deployment
 
 ---
 
-## ⚙️ How to Run
+## 🧠 Project Structure
 
-### 🔹 Backend
+
+---
+
+## ⚙️ Installation & Running Locally (Without Docker)
+
+### Backend
 ```bash
 cd backend
 python -m venv venv
-.\venv\Scripts\activate
-pip install flask pandas
+venv\Scripts\activate       # Windows
+pip install -r requirements.txt
 python app.py
 
+### Frontend
 cd frontend
 npm install
 npm start
 
+Running with Docker
+1. Build and run full stack:
+docker compose up --build
+2. Access App
+Frontend: http://localhost:3000
+Backend: http://localhost:5000/chat
